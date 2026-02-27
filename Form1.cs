@@ -1,3 +1,5 @@
+using CoffeShopNusantara.Views.Forms;
+
 namespace CoffeShopNusantara
 {
     public partial class Form1 : Form
@@ -20,6 +22,13 @@ namespace CoffeShopNusantara
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminForm adminForm = new AdminForm();
+            adminForm.Show();
         }
     }
 }
