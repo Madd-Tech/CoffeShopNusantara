@@ -43,6 +43,8 @@
             panelContent = new Panel();
             label3 = new Label();
             panel2 = new Panel();
+            newTransactionToolStripMenuItem = new ToolStripMenuItem();
+            historyToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -78,12 +80,14 @@
             changeProfileToolStripMenuItem.Name = "changeProfileToolStripMenuItem";
             changeProfileToolStripMenuItem.Size = new Size(290, 38);
             changeProfileToolStripMenuItem.Text = "Change profile";
+            changeProfileToolStripMenuItem.Click += changeProfileToolStripMenuItem_Click;
             // 
             // changePasswordToolStripMenuItem
             // 
             changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
             changePasswordToolStripMenuItem.Size = new Size(290, 38);
             changePasswordToolStripMenuItem.Text = "Change Password";
+            changePasswordToolStripMenuItem.Click += changePasswordToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
@@ -108,6 +112,7 @@
             // 
             // transactionToolStripMenuItem
             // 
+            transactionToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newTransactionToolStripMenuItem, historyToolStripMenuItem });
             transactionToolStripMenuItem.Name = "transactionToolStripMenuItem";
             transactionToolStripMenuItem.Size = new Size(141, 34);
             transactionToolStripMenuItem.Text = "Transaction";
@@ -166,6 +171,18 @@
             panel2.Size = new Size(195, 175);
             panel2.TabIndex = 4;
             // 
+            // newTransactionToolStripMenuItem
+            // 
+            newTransactionToolStripMenuItem.Name = "newTransactionToolStripMenuItem";
+            newTransactionToolStripMenuItem.Size = new Size(280, 38);
+            newTransactionToolStripMenuItem.Text = "New Transaction";
+            // 
+            // historyToolStripMenuItem
+            // 
+            historyToolStripMenuItem.Name = "historyToolStripMenuItem";
+            historyToolStripMenuItem.Size = new Size(280, 38);
+            historyToolStripMenuItem.Text = "History";
+            // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -204,5 +221,7 @@
         private Panel panelContent;
         private Label label3;
         private Panel panel2;
+        private ToolStripMenuItem newTransactionToolStripMenuItem;
+        private ToolStripMenuItem historyToolStripMenuItem;
     }
 }

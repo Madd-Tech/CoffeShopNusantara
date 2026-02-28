@@ -69,5 +69,17 @@ namespace CoffeShopNusantara.Views.Forms
             panelContent.Controls.Clear();
             panelContent.Controls.Add(new StockPanel());
         }
+
+        private void changeProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(new ChangeProfile());
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(new ChangePassword());
+        }
     }
 }

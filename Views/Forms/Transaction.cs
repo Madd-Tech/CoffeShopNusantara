@@ -6,18 +6,13 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CoffeShopNusantara.Views.Panels
+namespace CoffeShopNusantara.Views.Forms
 {
-    public partial class TransactionPanel : UserControl
+    public partial class Transaction : Form
     {
-        public TransactionPanel()
+        public Transaction()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button3_Click(object sender, EventArgs e)
