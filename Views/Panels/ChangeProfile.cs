@@ -8,21 +8,11 @@ using System.Windows.Forms;
 
 namespace CoffeShopNusantara.Views.Panels
 {
-    public partial class TransactionPanel : UserControl
+    public partial class ChangeProfile : UserControl
     {
-        public TransactionPanel()
+        public ChangeProfile()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -32,14 +32,14 @@
             label2 = new Label();
             label1 = new Label();
             counterStock = new Panel();
+            label9 = new Label();
             label4 = new Label();
             counterTrx = new Panel();
+            label3 = new Label();
             label6 = new Label();
             counterRecipe = new Panel();
-            label8 = new Label();
-            label9 = new Label();
-            label3 = new Label();
             label5 = new Label();
+            label8 = new Label();
             counterMember.SuspendLayout();
             counterStock.SuspendLayout();
             counterTrx.SuspendLayout();
@@ -91,6 +91,17 @@
             counterStock.Size = new Size(328, 196);
             counterStock.TabIndex = 1;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Noto Sans HK Medium", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = SystemColors.Info;
+            label9.Location = new Point(18, 24);
+            label9.Name = "label9";
+            label9.Size = new Size(121, 29);
+            label9.TabIndex = 6;
+            label9.Text = "Total Stock";
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -112,6 +123,17 @@
             counterTrx.Name = "counterTrx";
             counterTrx.Size = new Size(328, 196);
             counterTrx.TabIndex = 2;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Noto Sans HK Medium", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.Info;
+            label3.Location = new Point(27, 21);
+            label3.Name = "label3";
+            label3.Size = new Size(183, 29);
+            label3.TabIndex = 8;
+            label3.Text = "Jumlah Transaksi";
             // 
             // label6
             // 
@@ -135,39 +157,6 @@
             counterRecipe.Size = new Size(328, 196);
             counterRecipe.TabIndex = 3;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = SystemColors.Control;
-            label8.Location = new Point(217, 129);
-            label8.Name = "label8";
-            label8.Size = new Size(26, 30);
-            label8.TabIndex = 11;
-            label8.Text = "0";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Noto Sans HK Medium", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = SystemColors.Info;
-            label9.Location = new Point(18, 24);
-            label9.Name = "label9";
-            label9.Size = new Size(121, 29);
-            label9.TabIndex = 6;
-            label9.Text = "Total Stock";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Noto Sans HK Medium", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.Info;
-            label3.Location = new Point(27, 31);
-            label3.Name = "label3";
-            label3.Size = new Size(183, 29);
-            label3.TabIndex = 8;
-            label3.Text = "Jumlah Transaksi";
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -178,6 +167,17 @@
             label5.Size = new Size(131, 29);
             label5.TabIndex = 10;
             label5.Text = "Total Recipe";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = SystemColors.Control;
+            label8.Location = new Point(217, 129);
+            label8.Name = "label8";
+            label8.Size = new Size(26, 30);
+            label8.TabIndex = 11;
+            label8.Text = "0";
             // 
             // DashboardPanel
             // 
