@@ -43,20 +43,20 @@
             button1 = new Button();
             button2 = new Button();
             panel1 = new Panel();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            label11 = new Label();
-            label12 = new Label();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            button3 = new Button();
             button4 = new Button();
+            button3 = new Button();
+            textBox6 = new TextBox();
+            textBox5 = new TextBox();
+            label12 = new Label();
+            label11 = new Label();
+            textBox4 = new TextBox();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -86,6 +86,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.Location = new Point(242, 60);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(165, 155);
@@ -94,6 +95,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.Location = new Point(449, 60);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(165, 155);
@@ -102,6 +104,7 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(658, 60);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(165, 155);
@@ -110,6 +113,7 @@
             // 
             // pictureBox5
             // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(864, 60);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(165, 155);
@@ -205,101 +209,14 @@
             panel1.Size = new Size(604, 396);
             panel1.TabIndex = 13;
             // 
-            // label7
+            // button4
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(24, 15);
-            label7.Name = "label7";
-            label7.Size = new Size(57, 25);
-            label7.TabIndex = 0;
-            label7.Text = "Menu";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(24, 68);
-            label8.Name = "label8";
-            label8.Size = new Size(80, 25);
-            label8.TabIndex = 1;
-            label8.Text = "Quantity";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(24, 123);
-            label9.Name = "label9";
-            label9.Size = new Size(49, 25);
-            label9.TabIndex = 2;
-            label9.Text = "Price";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(24, 175);
-            label10.Name = "label10";
-            label10.Size = new Size(85, 25);
-            label10.TabIndex = 3;
-            label10.Text = "Sub Total";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(274, 15);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(281, 31);
-            textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(274, 68);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(281, 31);
-            textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(274, 123);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(281, 31);
-            textBox3.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(274, 175);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(281, 31);
-            textBox4.TabIndex = 7;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(24, 222);
-            label11.Name = "label11";
-            label11.Size = new Size(36, 25);
-            label11.TabIndex = 8;
-            label11.Text = "Tax";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(24, 279);
-            label12.Name = "label12";
-            label12.Size = new Size(49, 25);
-            label12.TabIndex = 9;
-            label12.Text = "Total";
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(274, 222);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(281, 31);
-            textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(274, 276);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(281, 31);
-            textBox6.TabIndex = 11;
+            button4.Location = new Point(316, 332);
+            button4.Name = "button4";
+            button4.Size = new Size(192, 40);
+            button4.TabIndex = 15;
+            button4.Text = "Sample Machiato";
+            button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -311,14 +228,101 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // button4
+            // textBox6
             // 
-            button4.Location = new Point(316, 332);
-            button4.Name = "button4";
-            button4.Size = new Size(192, 40);
-            button4.TabIndex = 15;
-            button4.Text = "Sample Machiato";
-            button4.UseVisualStyleBackColor = true;
+            textBox6.Location = new Point(274, 276);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(281, 31);
+            textBox6.TabIndex = 11;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(274, 222);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(281, 31);
+            textBox5.TabIndex = 10;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(24, 279);
+            label12.Name = "label12";
+            label12.Size = new Size(49, 25);
+            label12.TabIndex = 9;
+            label12.Text = "Total";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(24, 222);
+            label11.Name = "label11";
+            label11.Size = new Size(36, 25);
+            label11.TabIndex = 8;
+            label11.Text = "Tax";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(274, 175);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(281, 31);
+            textBox4.TabIndex = 7;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(274, 123);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(281, 31);
+            textBox3.TabIndex = 6;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(274, 68);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(281, 31);
+            textBox2.TabIndex = 5;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(274, 15);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(281, 31);
+            textBox1.TabIndex = 4;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(24, 175);
+            label10.Name = "label10";
+            label10.Size = new Size(85, 25);
+            label10.TabIndex = 3;
+            label10.Text = "Sub Total";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(24, 123);
+            label9.Name = "label9";
+            label9.Size = new Size(49, 25);
+            label9.TabIndex = 2;
+            label9.Text = "Price";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(24, 68);
+            label8.Name = "label8";
+            label8.Size = new Size(80, 25);
+            label8.TabIndex = 1;
+            label8.Text = "Quantity";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(24, 15);
+            label7.Name = "label7";
+            label7.Size = new Size(57, 25);
+            label7.TabIndex = 0;
+            label7.Text = "Menu";
             // 
             // Transaction
             // 
