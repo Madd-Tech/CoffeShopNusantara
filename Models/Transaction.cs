@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,7 +12,7 @@ namespace CoffeShopNusantara.Models
         public int NMenu { get; set; }
         public DateTime? TransactionDate { get; set; }
         public double? Subtotal { get; set; }
-        public int? idDiscount { get; set; }
+        public int? IdDiscount { get; set; }
         public double? Discount { get; set; }
         public double? TaxRate { get; set; }
         public double? Tax { get; set; }

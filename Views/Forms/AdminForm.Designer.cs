@@ -37,14 +37,14 @@
             recipeToolStripMenuItem = new ToolStripMenuItem();
             memberToolStripMenuItem = new ToolStripMenuItem();
             transactionToolStripMenuItem = new ToolStripMenuItem();
+            newTransactionToolStripMenuItem = new ToolStripMenuItem();
+            historyToolStripMenuItem = new ToolStripMenuItem();
             stockToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
             label1 = new Label();
             panelContent = new Panel();
             label3 = new Label();
             panel2 = new Panel();
-            newTransactionToolStripMenuItem = new ToolStripMenuItem();
-            historyToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -118,6 +118,18 @@
             transactionToolStripMenuItem.Text = "Transaction";
             transactionToolStripMenuItem.Click += transactionToolStripMenuItem_Click;
             // 
+            // newTransactionToolStripMenuItem
+            // 
+            newTransactionToolStripMenuItem.Name = "newTransactionToolStripMenuItem";
+            newTransactionToolStripMenuItem.Size = new Size(280, 38);
+            newTransactionToolStripMenuItem.Text = "New Transaction";
+            // 
+            // historyToolStripMenuItem
+            // 
+            historyToolStripMenuItem.Name = "historyToolStripMenuItem";
+            historyToolStripMenuItem.Size = new Size(280, 38);
+            historyToolStripMenuItem.Text = "History";
+            // 
             // stockToolStripMenuItem
             // 
             stockToolStripMenuItem.Name = "stockToolStripMenuItem";
@@ -153,6 +165,7 @@
             panelContent.Name = "panelContent";
             panelContent.Size = new Size(986, 537);
             panelContent.TabIndex = 2;
+            panelContent.Paint += panelContent_Paint;
             // 
             // label3
             // 
@@ -170,18 +183,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(195, 175);
             panel2.TabIndex = 4;
-            // 
-            // newTransactionToolStripMenuItem
-            // 
-            newTransactionToolStripMenuItem.Name = "newTransactionToolStripMenuItem";
-            newTransactionToolStripMenuItem.Size = new Size(280, 38);
-            newTransactionToolStripMenuItem.Text = "New Transaction";
-            // 
-            // historyToolStripMenuItem
-            // 
-            historyToolStripMenuItem.Name = "historyToolStripMenuItem";
-            historyToolStripMenuItem.Size = new Size(280, 38);
-            historyToolStripMenuItem.Text = "History";
             // 
             // AdminForm
             // 

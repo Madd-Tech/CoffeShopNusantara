@@ -123,6 +123,7 @@
             counterTrx.Name = "counterTrx";
             counterTrx.Size = new Size(328, 196);
             counterTrx.TabIndex = 2;
+            counterTrx.Paint += counterTrx_Paint;
             // 
             // label3
             // 
@@ -189,6 +190,7 @@
             Controls.Add(counterMember);
             Name = "DashboardPanel";
             Size = new Size(1305, 836);
+            Load += DashboardPanel_Load;
             counterMember.ResumeLayout(false);
             counterMember.PerformLayout();
             counterStock.ResumeLayout(false);

@@ -19,5 +19,15 @@ namespace CoffeShopNusantara.Views.Panels
         {
 
         }
+
+        private void counterTrx_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DashboardPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -81,5 +81,10 @@ namespace CoffeShopNusantara.Views.Forms
             panelContent.Controls.Clear();
             panelContent.Controls.Add(new ChangePassword());
         }
+
+        private void panelContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
