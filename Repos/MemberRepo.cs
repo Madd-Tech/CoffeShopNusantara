@@ -15,9 +15,9 @@ namespace CoffeShopNusantara.Repos
             await conn.OpenAsync();
             using var cmd = conn.CreateCommand();
             cmd.CommandText = "INSERT INTO member " +
-                "(code,full_name,phone,email,username,password,last_update,is_deleted) " +
+                "(code,fullname,phone,email,username,password,last_update,is_deleted) " +
                 "VALUES " +
-                "(@code,@full_name,@phone,@email,@username,@password,@last_update,@is_deleted); " +
+                "(@code,@fullname,@phone,@email,@username,@password,@last_update,@is_deleted); " +
                 "SELECT LAST_INSERT_ID();";
                /*"(" +
                     member.Code + "," +
@@ -25,7 +25,7 @@ namespace CoffeShopNusantara.Repos
                     (object?)member.Phone ?? System.DBNull.Value + "," +
                ");";*/
             cmd.Parameters.AddWithValue("@code", member.Code);
-            cmd.Parameters.AddWithValue("@full_name", (object?)member.FullName ?? System.DBNull.Value);
+            cmd.Parameters.AddWithValue("@fullname", (object?)member.FullName ?? System.DBNull.Value);
             cmd.Parameters.AddWithValue("@phone", (object?)member.Phone ?? System.DBNull.Value);
             cmd.Parameters.AddWithValue("@email", (object?)member.Email ?? System.DBNull.Value);
             cmd.Parameters.AddWithValue("@username", member.Username);
@@ -44,7 +44,7 @@ namespace CoffeShopNusantara.Repos
             using var conn = Database.GetConnection();
             await conn.OpenAsync();
             using var cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT id_member, code, full_name, phone, email, username, password, last_update, is_deleted FROM member WHERE id_member=@id AND (is_deleted IS NULL OR is_deleted != '1') LIMIT 1";
+            cmd.CommandText = "SELECT id_member, code, fullname, phone, email, username, password, last_update, is_deleted FROM member WHERE id_member=@id AND (is_deleted IS NULL OR is_deleted != '1') LIMIT 1";
             cmd.Parameters.AddWithValue("@id", id);
             using var reader = await cmd.ExecuteReaderAsync();
             if (await reader.ReadAsync())
@@ -53,7 +53,7 @@ namespace CoffeShopNusantara.Repos
                 {
                     IdMember = reader.GetInt32("id_member"),
                     Code = reader.GetString("code"),
-                    FullName = reader.IsDBNull("full_name") ? null : reader.GetString("full_name"),
+                    FullName = reader.IsDBNull("fullname") ? null : reader.GetString("fullname"),
                     Phone = reader.IsDBNull("phone") ? null : reader.GetString("phone"),
                     Email = reader.IsDBNull("email") ? null : reader.GetString("email"),
                     Username = reader.GetString("username"),
@@ -71,7 +71,7 @@ namespace CoffeShopNusantara.Repos
             using var conn = Database.GetConnection();
             await conn.OpenAsync();
             using var cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT id_member, code, full_name, phone, email, username, password, last_update, is_deleted FROM member WHERE (is_deleted IS NULL OR is_deleted != '1')";
+            cmd.CommandText = "SELECT id_member, code, fullname, phone, email, username, password, last_update, is_deleted FROM member WHERE (is_deleted IS NULL OR is_deleted != '1')";
             using var reader = await cmd.ExecuteReaderAsync();
             while (await reader.ReadAsync())
             {
@@ -79,7 +79,7 @@ namespace CoffeShopNusantara.Repos
                 {
                     IdMember = reader.GetInt32("id_member"),
                     Code = reader.GetString("code"),
-                    FullName = reader.IsDBNull("full_name") ? null : reader.GetString("full_name"),
+                    FullName = reader.IsDBNull("fullname") ? null : reader.GetString("fullname"),
                     Phone = reader.IsDBNull("phone") ? null : reader.GetString("phone"),
                     Email = reader.IsDBNull("email") ? null : reader.GetString("email"),
                     Username = reader.GetString("username"),
@@ -98,11 +98,11 @@ namespace CoffeShopNusantara.Repos
             using var conn = Database.GetConnection();
             await conn.OpenAsync();
             using var cmd = conn.CreateCommand();
-            cmd.CommandText = "UPDATE member SET code=@code, full_name=@full_name, " +
+            cmd.CommandText = "UPDATE member SET code=@code, fullname=@fullname, " +
                 "phone=@phone, email=@email, username=@username, password=@password, " +
                 "last_update=@last_update, is_deleted=@is_deleted WHERE id_member=@id";
             cmd.Parameters.AddWithValue("@code", member.Code);
-            cmd.Parameters.AddWithValue("@full_name", (object?)member.FullName ?? System.DBNull.Value);
+            cmd.Parameters.AddWithValue("@fullname", (object?)member.FullName ?? System.DBNull.Value);
             cmd.Parameters.AddWithValue("@phone", (object?)member.Phone ?? System.DBNull.Value);
             cmd.Parameters.AddWithValue("@email", (object?)member.Email ?? System.DBNull.Value);
             cmd.Parameters.AddWithValue("@username", member.Username);

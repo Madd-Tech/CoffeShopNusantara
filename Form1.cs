@@ -30,5 +30,12 @@ namespace CoffeShopNusantara
             AdminForm adminForm = new AdminForm();
             adminForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignUpForm signUpForm = new SignUpForm();
+            signUpForm.Show();
+        }
     }
 }

@@ -8,7 +8,7 @@ namespace CoffeShopNusantara.Repos
     public static class Database
     {
         public static string ConnectionStringOldStyle { get; set; }
-        = "Server=localhost;Port=3306;Database=coffeeshopnusantara;Uid=root;Pwd=;";
+        = "Server=localhost;Port=3306;Database=db_coffenusantara;Uid=root;Pwd=;";
         public static MySqlConnection GetConnectionOldStyle()
         {
             return new MySqlConnection(ConnectionStringOldStyle);
@@ -17,7 +17,7 @@ namespace CoffeShopNusantara.Repos
         {
             Server = "localhost",
             Port = 3306,
-            Database = "coffeeshopnusantara",
+            Database = "db_coffenusantara",
             UserID = "root",
             Password = "",
             Pooling = true,
